@@ -1,0 +1,48 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Backups & Temporary files
+backups/
+*.backup
+*.tmp
+archivos_temporales_y_respaldos
+export_excel_tablas/
+BaseDatos_Supabase_Completa.xlsx
+seed_data.json
+uploads/
+!uploads/.gitkeep
+
+# Scratch scripts
+add_enum_value.ts
+check_*.ts
+convert_*.ts
+delete_*.ts
+drop_*.ts
+fix_*.ts
+get_*.ts
+migrate.ts
+rename_tables.ts
+restore_*.ts
+sync_personas.ts
+update_genero.ts
+uppercase_names.ts
+src/api/clean_duplicates.ts
+temp_*.*
+
+# Database dumps & private records
+*.sql
+supabase_backup.sql
+Documentos_base/*.xlsx
+Documentos_base/*.docx
+Documentos_base/*.pdf
+!Documentos_base/logos/
+
+# Nested git folder
+siga-cetpro-jj/
+

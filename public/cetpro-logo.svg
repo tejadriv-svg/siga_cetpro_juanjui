@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="torchGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Circle Border -->
+  <circle cx="100" cy="100" r="96" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="4" filter="url(#shadow)"/>
+  
+  <!-- Outer Blue Ring -->
+  <circle cx="100" cy="100" r="90" fill="url(#shieldGrad)"/>
+  
+  <!-- Inner Gold Ring -->
+  <circle cx="100" cy="100" r="72" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+  <!-- Curved Text Top: CETPRO JUANJUI -->
+  <path id="textArcTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="900" fill="#fef08a" letter-spacing="2">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      CETPRO JUANJUÍ
+    </textPath>
+  </text>
+
+  <!-- Curved Text Bottom: SAN MARTIN - PERU -->
+  <path id="textArcBottom" d="M 165,105 A 70,70 0 0,1 35,105" fill="none"/>
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#ffffff" letter-spacing="2">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      SAN MARTÍN • PERÚ
+    </textPath>
+  </text>
+
+  <!-- Central Gear (Industry & Technical Education) -->
+  <g transform="translate(100, 100) scale(0.65)">
+    <!-- Gear Teeth -->
+    <path d="M -10,-55 L 10,-55 L 12,-45 L 25,-48 L 33,-38 L 24,-30 L 33,-20 L 45,-25 L 50,-12 L 39,-6 L 43,8 L 54,9 L 52,24 L 40,21 L 38,35 L 48,43 L 40,55 L 27,47 L 18,57 L 20,68 L 5,70 L 4,58 L -10,58 L -11,70 L -26,68 L -24,57 L -33,47 L -46,55 L -54,43 L -44,35 L -46,21 L -58,24 L -60,9 L -49,8 L -45,-6 L -56,-12 L -51,-25 L -39,-20 L -30,-30 L -39,-38 L -31,-48 L -18,-45 Z" fill="#0284c7" opacity="0.15"/>
+  </g>
+
+  <!-- Heraldic Shield in Center -->
+  <path d="M 68,62 L 132,62 Q 132,110 100,136 Q 68,110 68,62 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Left Half of Shield (Emerald Green) -->
+  <path d="M 68,62 L 100,62 L 100,136 Q 68,110 68,62 Z" fill="#059669"/>
+  
+  <!-- Right Half of Shield (Royal Blue) -->
+  <path d="M 100,62 L 132,62 Q 132,110 100,136 L 100,62 Z" fill="#2563eb"/>
+
+  <!-- Open Book Symbol (Wisdom & Technical Knowledge) -->
+  <path d="M 75,98 C 85,92 95,95 100,100 C 105,95 115,92 125,98 L 125,115 C 115,109 105,112 100,117 C 95,112 85,109 75,115 Z" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+  <path d="M 100,100 L 100,117" stroke="#0f172a" stroke-width="1.5"/>
+
+  <!-- Torch Flame in Center (Light of Education) -->
+  <path d="M 100,68 C 94,76 96,84 100,90 C 104,84 106,76 100,68 Z" fill="url(#torchGrad)"/>
+  <path d="M 98,90 L 102,90 L 101,96 L 99,96 Z" fill="url(#goldGrad)" stroke="#78350f" stroke-width="0.8"/>
+
+  <!-- Two Little Golden Stars -->
+  <polygon points="46,100 48,104 52,104 49,107 50,111 46,108 42,111 43,107 40,104 44,104" fill="url(#goldGrad)"/>
+  <polygon points="154,100 156,104 160,104 157,107 158,111 154,108 150,111 151,107 148,104 152,104" fill="url(#goldGrad)"/>
+</svg>
